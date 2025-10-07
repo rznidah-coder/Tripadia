@@ -3,44 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TripadIA – Votre compagnon de voyage intelligent</title>
+  <title>TripadIA — Voyage intelligent</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Globe_icon.svg" alt="Logo" />
-        <span>Tripad<span class="gold">IA</span></span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Expériences</a></li>
-          <li><a href="#">À propos</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle">☰</div>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="TripadIA" />
+      <span>TripadIA</span>
     </div>
+    <nav>
+      <a href="#">Destinations</a>
+      <a href="#">Inspirations</a>
+      <a href="#">À propos</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>TripadIA — Votre compagnon de voyage intelligent</h1>
-    <p>Un assistant de voyage qui connaît vos préférences et vous guide pour chaque aventure. Simple, élégant et efficace.</p>
-    <div class="search-box">
-      <input type="text" placeholder="Où souhaitez-vous aller ?" />
-      <button>Explorer</button>
-    </div>
-  </section>
+  <!-- Section principale -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Votre compagnon de voyage intelligent</h1>
+        <p>Explorez le monde avec élégance, simplicité et IA.</p>
+        <div class="search-bar">
+          <input id="destination" type="text" placeholder="Où souhaitez-vous aller ?" />
+          <button id="explore">Explorer</button>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
+    <!-- Section suggestions -->
+    <section class="suggestions">
+      <h2>Suggestions personnalisées</h2>
+      <div id="trip-suggestions" class="suggestions-grid"></div>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 TripadIA — Voyagez avec élégance et intelligence</p>
+    © 2025 TripadIA — Voyagez avec élégance et intelligence
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
